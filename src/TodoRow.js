@@ -7,9 +7,9 @@ class TodoRow extends Component {
                 <td>{ this.props.todo.action }</td>
                 <td>
                     <input 
-                        type={'checkbox'}
+                        type='checkbox'
                         checked={this.props.todo.done}
-                        onChange={() => this.props.toggleTodo(this.props.todo)}
+                        onChange={() => this.props.callback(this.props.todo)}
                     />
                 </td>
             </tr>
