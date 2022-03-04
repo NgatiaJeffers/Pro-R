@@ -6,7 +6,7 @@ class TodoBanner extends Component {
             <div>
                 <h4 className='bg-primary text-white text-center p-2'>
                     {this.props.userName}'s To Do List
-                    ({this.props.todoItems.filter(t => !t.done).length} items left)
+                    ({this.props.tasks.filter(t => !t.done).length} items left)
                 </h4>
             </div>
         );
